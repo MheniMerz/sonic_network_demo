@@ -1,0 +1,427 @@
+{
+    "hosts": [
+        {
+            "HOSTNAME": "spine01",
+            "MAC": "44:38:39:00:01:82",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "spine"
+        },
+        {
+            "HOSTNAME": "spine02",
+            "MAC": "44:38:39:00:01:92",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "spine"
+        },
+        {
+            "HOSTNAME": "spine03",
+            "MAC": "44:38:39:00:01:70",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "spine"
+        },
+        {
+            "HOSTNAME": "spine04",
+            "MAC": "44:38:39:00:01:6c",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "spine"
+        },
+        {
+            "HOSTNAME": "fw1",
+            "MAC": "44:38:39:00:01:8c",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "fw2",
+            "MAC": "44:38:39:00:01:8e",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "leaf01",
+            "MAC": "44:38:39:00:01:7a",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "leaf02",
+            "MAC": "44:38:39:00:01:78",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "leaf03",
+            "MAC": "44:38:39:00:01:84",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "leaf04",
+            "MAC": "44:38:39:00:01:8a",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "leaf"
+        },
+        {
+            "HOSTNAME": "border01",
+            "MAC": "44:38:39:00:01:74",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "exit"
+        },
+        {
+            "HOSTNAME": "border02",
+            "MAC": "44:38:39:00:01:7c",
+            "PLATFORM": "sonic-202012-fb89c28c",
+            "TYPE": "exit"
+        },
+        {
+            "HOSTNAME": "server01",
+            "MAC": "44:38:39:00:01:7e",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server02",
+            "MAC": "44:38:39:00:01:6e",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server03",
+            "MAC": "44:38:39:00:01:90",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server04",
+            "MAC": "44:38:39:00:01:6a",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server05",
+            "MAC": "44:38:39:00:01:88",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server06",
+            "MAC": "44:38:39:00:01:86",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server07",
+            "MAC": "44:38:39:00:01:76",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        },
+        {
+            "HOSTNAME": "server08",
+            "MAC": "44:38:39:00:01:72",
+            "PLATFORM": "generic/ubuntu1804",
+            "TYPE": "host"
+        }
+    ],
+    "topology": [
+        {
+            "LOCALDEVICE": "leaf01",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server01",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf01",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server02",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf01",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "server03",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf02",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server01",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf02",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server02",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf02",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "server03",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf03",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server04",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf03",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server05",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf03",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "server06",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "leaf04",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server04",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf04",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server05",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf04",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "server06",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "leaf01",
+            "LOCALPORT": "swp49",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp49"
+        },
+        {
+            "LOCALDEVICE": "leaf01",
+            "LOCALPORT": "swp50",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp50"
+        },
+        {
+            "LOCALDEVICE": "leaf03",
+            "LOCALPORT": "swp49",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp49"
+        },
+        {
+            "LOCALDEVICE": "leaf03",
+            "LOCALPORT": "swp50",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp50"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp49",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp49"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp50",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp50"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "leaf01",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "leaf01",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "leaf01",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "leaf01",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "leaf02",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "leaf03",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "leaf03",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "leaf03",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "leaf03",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "leaf04",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp5",
+            "REMOTEDEVICE": "border01",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp5",
+            "REMOTEDEVICE": "border01",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp5",
+            "REMOTEDEVICE": "border01",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp5",
+            "REMOTEDEVICE": "border01",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "spine01",
+            "LOCALPORT": "swp6",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp51"
+        },
+        {
+            "LOCALDEVICE": "spine02",
+            "LOCALPORT": "swp6",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp52"
+        },
+        {
+            "LOCALDEVICE": "spine03",
+            "LOCALPORT": "swp6",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp53"
+        },
+        {
+            "LOCALDEVICE": "spine04",
+            "LOCALPORT": "swp6",
+            "REMOTEDEVICE": "border02",
+            "REMOTEPORT": "swp54"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server07",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server08",
+            "REMOTEPORT": "eth1"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "fw1",
+            "REMOTEPORT": "swp1"
+        },
+        {
+            "LOCALDEVICE": "border01",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "fw2",
+            "REMOTEPORT": "swp1"
+        },
+        {
+            "LOCALDEVICE": "border02",
+            "LOCALPORT": "swp1",
+            "REMOTEDEVICE": "server07",
+            "REMOTEPORT": "eth2"
+        },
+        {
+            "LOCALDEVICE": "border02",
+            "LOCALPORT": "swp2",
+            "REMOTEDEVICE": "server08",
+            "REMOTEPORT": "eth2"
+        },
+	{
+            "LOCALDEVICE": "border02",
+            "LOCALPORT": "swp3",
+            "REMOTEDEVICE": "fw1",
+            "REMOTEPORT": "swp2"
+        },
+        {
+            "LOCALDEVICE": "border02",
+            "LOCALPORT": "swp4",
+            "REMOTEDEVICE": "fw2",
+            "REMOTEPORT": "swp2"
+        }
+    ]
+}
+
