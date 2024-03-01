@@ -1,0 +1,85 @@
+---
+- hosts: server
+  become: true
+  gather_facts: false
+  tasks:
+  - name: remove problematic apt repo
+    ansible.builtin.file:
+      state: absent
+      path: /etc/apt/sources.list.d/apps3_cumulusnetworks_com_repos_deb.list
+  - name: install ifupdown
+    apt:
+      name: ifupdown
+      state: present
+      update_cache: yes
+
+  - name: Add bonding module
+    modprobe:
+      name: bonding
+      state: present
+
+  - name: Add ifenslave
+    apt:
+      name: ifenslave
+      state: present
+
+  - name: Remove netplan
+    apt:
+      name: netplan.io
+      state: absent
+
+  - name: Install FRR key
+    apt_key:
+      url: https://deb.frrouting.org/frr/keys.asc
+      state: present
+
+  - name: Add FRR apt repository
+    apt_repository:
+      repo: deb https://deb.frrouting.org/frr bionic frr-stable
+      state: present
+
+  - name: Install FRR
+    apt:
+      name:
+        - frr
+        - frr-pythontools
+      update_cache: yes
+
+  - name: Copy over interfaces template
+    copy: src=./backup_files/{{inventory_hostname}}/interfaces dest=/etc/network/interfaces
+    notify: reboot server
+
+  - name: Restore FRR daemons
+    copy: src=./backup_files/{{inventory_hostname}}/daemons dest=/etc/frr/daemons
+    notify: restart frr
+
+  - name: Restore FRR configs
+    copy: src=./backup_files/{{inventory_hostname}}/frr.conf dest=/etc/frr/frr.conf
+    notify: restart frr
+
+  handlers:
+  ### The reboot module fails to reconnect after the server reboots, so replacing it with a workaround of using the async with shell command
+  # - name: reboot server
+  #   reboot:
+  #     reboot_timeout: 1200
+  #     test_command: pwd
+
+  - name: rebooting server
+    shell: sleep 2 && shutdown -r now "Ansible reboot triggered"
+    async: 1
+    poll: 0
+    ignore_errors: true
+    listen: "reboot server"
+    
+  - name: waiting for server to come back online
+    wait_for_connection:
+      connect_timeout: 60
+      sleep: 5
+      delay: 5
+      timeout: 300
+    listen: "reboot server"
+
+  - name: restart frr
+    service:
+      name: frr
+      state: restarted
