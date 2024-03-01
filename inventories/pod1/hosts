@@ -1,0 +1,42 @@
+[all:vars]
+ansible_user=cumulus
+ansible_ssh_pass=CumulusLinux!
+
+[border]
+border01 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+border02 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+
+[fw]
+fw1 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+fw2 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+
+[leaf]
+leaf01 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+leaf02 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+leaf03 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+leaf04 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+
+[spine]
+spine01 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+spine02 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+spine03 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+spine04 ansible_user=admin ansible_ssh_pass=YourPaSsWoRd
+
+[server]
+server01
+server02
+server03
+server04
+server05
+server06
+
+[pod1:children]
+fw
+leaf
+clspine
+sonicspine
+border
+server
+
+[netq]
+netq-ts
