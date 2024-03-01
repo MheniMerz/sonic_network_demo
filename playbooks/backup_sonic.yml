@@ -1,0 +1,10 @@
+---
+- hosts: leaf spine border fw
+  become: true
+  gather_facts: false
+  tasks:
+  - name: Backup config_db
+    fetch: src=/etc/sonic/config_db.json dest=./backup_files/{{inventory_hostname}}/config_db.json flat=yes
+
+  - name: Backup frr
+    fetch: src=/etc/sonic/frr/bgpd.conf dest=./backup_files/{{inventory_hostname}}/bgpd.conf flat=yes

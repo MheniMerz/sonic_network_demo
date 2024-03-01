@@ -1,0 +1,35 @@
+---
+- hosts: leaf spine fw border
+  vars:
+    ansible_user: admin
+    ansible_ssh_pass: YourPaSsWoRd
+  become: true
+  gather_facts: false
+  tasks:
+  - name: Restore config_db
+    copy: src=./backup_files/{{inventory_hostname}}/config_db.json dest=/etc/sonic/config_db.json
+    notify: reload sonic config
+
+  - name: Set eth[1-9] MTU to 9238
+    shell: |
+      for i in $(ip link | grep eth[1-9] | awk -F':' '{print $2}'); do
+        ip link set mtu 9238 $i
+      done
+    args:
+      executable: /bin/bash
+
+  - name: Check for ebtables.filter
+    stat: path=/etc/ebtables.filter
+    register: ebtables_stat
+
+  - name: Disable default ebtables DROP rules
+    command: mv /etc/ebtables.filter /etc/ebtables.filter.disabled
+    when: ebtables_stat.stat.exists
+    notify: flush ebtables
+
+  handlers:
+  - name: reload sonic config
+    shell: config reload -y
+
+  - name: flush ebtables
+    shell: ebtables -F
