@@ -124,303 +124,303 @@
     "topology": [
         {
             "LOCALDEVICE": "leaf01",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server01",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf01",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server02",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf01",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "server03",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf02",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server01",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf02",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server02",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf02",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "server03",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf03",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server04",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf03",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server05",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf03",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "server06",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "leaf04",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server04",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf04",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server05",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf04",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "server06",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "leaf01",
-            "LOCALPORT": "swp49",
+            "LOCALPORT": "Ethernet12",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp49"
+            "REMOTEPORT": "Ethernet12"
         },
         {
             "LOCALDEVICE": "leaf01",
-            "LOCALPORT": "swp50",
+            "LOCALPORT": "Ethernet16",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp50"
+            "REMOTEPORT": "Ethernet16"
         },
         {
             "LOCALDEVICE": "leaf03",
-            "LOCALPORT": "swp49",
+            "LOCALPORT": "Ethernet40",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp49"
+            "REMOTEPORT": "Ethernet40"
         },
         {
             "LOCALDEVICE": "leaf03",
-            "LOCALPORT": "swp50",
+            "LOCALPORT": "Ethernet44",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp50"
+            "REMOTEPORT": "Ethernet44"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp49",
+            "LOCALPORT": "Ethernet40",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp49"
+            "REMOTEPORT": "Ethernet40"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp50",
+            "LOCALPORT": "Ethernet44",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp50"
+            "REMOTEPORT": "Ethernet44"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "leaf01",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet20"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "leaf01",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet24"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "leaf01",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet28"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "leaf01",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet32"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet20"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet24"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet28"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "leaf02",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet32"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "leaf03",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet20"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "leaf03",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet24"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "leaf03",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet28"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "leaf03",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet32"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet12",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet20"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet12",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet24"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet12",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet28"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet12",
             "REMOTEDEVICE": "leaf04",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet32"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp5",
+            "LOCALPORT": "Ethernet16",
             "REMOTEDEVICE": "border01",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet20"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp5",
+            "LOCALPORT": "Ethernet16",
             "REMOTEDEVICE": "border01",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet4"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp5",
+            "LOCALPORT": "Ethernet16",
             "REMOTEDEVICE": "border01",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet8"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp5",
+            "LOCALPORT": "Ethernet16",
             "REMOTEDEVICE": "border01",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet12"
         },
         {
             "LOCALDEVICE": "spine01",
-            "LOCALPORT": "swp6",
+            "LOCALPORT": "Ethernet20",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp51"
+            "REMOTEPORT": "Ethernet0"
         },
         {
             "LOCALDEVICE": "spine02",
-            "LOCALPORT": "swp6",
+            "LOCALPORT": "Ethernet20",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp52"
+            "REMOTEPORT": "Ethernet4"
         },
         {
             "LOCALDEVICE": "spine03",
-            "LOCALPORT": "swp6",
+            "LOCALPORT": "Ethernet20",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp53"
+            "REMOTEPORT": "Ethernet8"
         },
         {
             "LOCALDEVICE": "spine04",
-            "LOCALPORT": "swp6",
+            "LOCALPORT": "Ethernet20",
             "REMOTEDEVICE": "border02",
-            "REMOTEPORT": "swp54"
+            "REMOTEPORT": "Ethernet12"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server07",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server08",
             "REMOTEPORT": "eth1"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "fw1",
-            "REMOTEPORT": "swp1"
+            "REMOTEPORT": "Ethernet0"
         },
         {
             "LOCALDEVICE": "border01",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet32",
             "REMOTEDEVICE": "fw2",
-            "REMOTEPORT": "swp1"
+            "REMOTEPORT": "Ethernet0"
         },
         {
             "LOCALDEVICE": "border02",
-            "LOCALPORT": "swp1",
+            "LOCALPORT": "Ethernet0",
             "REMOTEDEVICE": "server07",
             "REMOTEPORT": "eth2"
         },
         {
             "LOCALDEVICE": "border02",
-            "LOCALPORT": "swp2",
+            "LOCALPORT": "Ethernet4",
             "REMOTEDEVICE": "server08",
             "REMOTEPORT": "eth2"
         },
 	{
             "LOCALDEVICE": "border02",
-            "LOCALPORT": "swp3",
+            "LOCALPORT": "Ethernet8",
             "REMOTEDEVICE": "fw1",
-            "REMOTEPORT": "swp2"
+            "REMOTEPORT": "Ethernet4"
         },
         {
             "LOCALDEVICE": "border02",
-            "LOCALPORT": "swp4",
+            "LOCALPORT": "Ethernet32",
             "REMOTEDEVICE": "fw2",
-            "REMOTEPORT": "swp2"
+            "REMOTEPORT": "Ethernet4"
         }
     ]
 }
